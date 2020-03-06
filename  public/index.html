@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <html>
+  <div id="sky">
+    <div id="sea">
+    </div>
+  </div>
   <head>
     <meta charset="utf-8">
+    <link rel="icon" type="image/ico" href="https://pokemonbrowser.com/favicon.ico" sizes="16x16">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Pelea de Pokemons</title>
     <style>
@@ -142,6 +147,25 @@
     <figura-fuego></figura-fuego>
     <figura-fuego></figura-fuego>
     <figura-fuego></figura-fuego>
+    <script>
+      /** @interface */
+class Saludo {
+  saluda() { throw new Error("Interfaz"); }
+}
+
+/** @implements {Saludo} */
+class Bienvenida {
+  /** @override */
+  saluda() {
+    alert("Bienvenido a este proyecto de un Juego de POKEMON");
+  }
+}
+const saludos =
+  [new Bienvenida()];
+for (var saludo of saludos) {
+  saludo.saluda();
+}
+    </script>
     <footer><center><b> <p style="color:#FFFFFF"; </p>Villardo Guzman Ismael Ian</b></center></footer>
  
         <!--Script Para Movimientos Pikachu-->
