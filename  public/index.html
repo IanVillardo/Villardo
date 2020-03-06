@@ -79,6 +79,17 @@
         derecha() {
           this.x += 20;
           this.muévete()
+          if(this.x == 480){
+              alert("PIKACHU PUEDE SEGUIR SU CAMINO");
+              
+                          } 
+         else if(this.x == 500){
+          alert("PIKACHU A LOGRADO PASAR EL JUEGO");
+            this.innerHTML="<img src=\"https://i.ya-webdesign.com/images/dancing-pikachu-png-5.gif\" width=\"550px\" height=\"400px\">";
+
+                          } 
+                         
+     
         }
         muévete() {
           this.truenos = Array.from(document.querySelectorAll("figura-trueno"));
@@ -109,6 +120,12 @@
         izquierda() {
           this.x -= 20;
           this.muévete()
+          if(this.x == 660){
+              this.innerHTML="<img src=\"https://www.dlf.pt/png/big/12/129117_boom-explosion-png.png\" width=\"280px\" height=\"130px\">";
+              alert("Pikachu a usado IMPACTRUENO");
+              alert("Pikachu derroto a cindaquil");
+              this.x=4000;
+            } 
         }
         derecha() {
           this.x += 20;
@@ -128,7 +145,7 @@
     </script>
   </head>
   <center><body>
-    <div><center><b> <H1 style="color:#FFFFFF"; </H1>Aprieta las flechas del teclado <br> o <br>Mueve con El touch de tu dispositivo<br><br></b></center></div>
+    <div><center><b> <H1 style="color:#FFFFFF"; </H1>AYUDA A PIKACHU A PASAR AL OTRO LADO <br><br>Usa las teclas Direccionales o Touch<br><br></b></center></div>
       <div id="sky">
         <div id="sea">
       <div data-video="TLYsuP4BH3w"  
